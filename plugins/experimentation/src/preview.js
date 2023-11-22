@@ -281,7 +281,7 @@ async function decorateExperimentPill(overlay, options, context) {
   }
   // eslint-disable-next-line no-console
   console.log('preview experiment', experiment);
-
+/*
   const pill = createPopupButton(
     `Experiment: ${config.id}`,
     {
@@ -302,7 +302,7 @@ async function decorateExperimentPill(overlay, options, context) {
   );
   pill.classList.add(`is-${context.toClassName(config.status)}`);
   overlay.append(pill);
-
+*/
   const performanceMetrics = await fetchRumData(experiment, options);
   if (performanceMetrics === null) {
     return;
